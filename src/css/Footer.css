@@ -1,0 +1,72 @@
+.footer {
+  min-height: 250px;
+  background-color: #1e1e1e;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'acumin-pro', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  padding: 20px 0px 80px 0px;
+}
+
+.footer img.logo {
+  width: auto;
+  height: 60%;
+}
+
+.footer .item {
+  width: 30%;
+  min-width: 200px;
+  font-size: 14px;
+  text-align: left;
+  margin: 30px;
+}
+
+.footer .credits {
+  line-height: 1.7em;
+  display: flex;
+  align-content: flex-start;
+}
+
+.footer .credits p {
+  width: 250px;
+}
+
+.footer .credits img {
+  align-self: flex-start;
+  margin-top: -10px;
+  margin-left: 20px;
+  object-fit: contain;
+}
+
+.footer .item.share {
+  font-size: 18px;
+  width: 10%;
+  min-width: 150px;
+}
+
+.footer .share .icon{
+  margin-right: 30px;
+}
+
+.footer .cc {
+  line-height: 1.2em;
+  font-family: 'acumin-pro', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 10.5px;
+}
+
+.footer .cc img {
+  width: 130px;
+  height: auto;
+}
+
+.footer .cc p {
+  width: 500px;
+  padding: 0px 50px;
+}
