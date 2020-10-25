@@ -30,7 +30,7 @@ class Navbar extends React.Component {
             </NavLink>
             <button className="menu" id="hamburger" onClick={this.toggleMenu}>
               <img
-                className="hamburger-icon"
+                id="hamburger-icon"
                 src={hamburger}
                 alt="Ícono de menú desplegable"
               />
