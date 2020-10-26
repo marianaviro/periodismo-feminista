@@ -1,0 +1,91 @@
+.navbar {
+  align-items: flex-start;
+  background-color: #1e1e1e;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+}
+
+.navbarRight {
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.navbarLogo {
+  max-width: 200px;
+}
+
+.navbarBurger {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.navbarBurger:focus {
+  outline: none;
+}
+
+.navbarLeft {
+  display: none;
+}
+
+.navbarLink {
+  color: #ffffff;
+  font-size: 20px;
+  font-style: italic;
+  text-decoration: none;
+}
+
+.navbarLink:hover {
+  color: #ff4adc;
+}
+
+.navbarSocial > * ~ * {
+  margin-left: 16px;
+}
+
+.isOpen .navbarLeft {
+  background-color: #1e1e1e;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  left: 0;
+  padding: 20px;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+}
+
+.navbarLeft > * ~ * {
+  margin-top: 8px;
+}
+
+@media screen and (min-width: 1024px) {
+  .navbarBurger {
+    display: none;
+  }
+
+  .navbarRight {
+    width: auto;
+  }
+
+  .isOpen .navbarLeft,
+  .navbarLeft {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0;
+    position: static;
+  }
+
+  .isOpen .navbarLeft,
+  .navbarLeft > * ~ * {
+    margin-left: 32px;
+    margin-top: 0;
+  }
+}
