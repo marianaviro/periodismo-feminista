@@ -1,0 +1,40 @@
+.story.columns {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0px;
+}
+
+.story .column {
+  width: 100%;
+}
+
+.story .column.left {
+  padding: 100px 80px 25px 80px;
+  text-align: right;
+}
+
+.story .column.right {
+  height: 500px;
+}
+
+.story-title {
+  font-family: league-gothic, sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  letter-spacing: 0.009em;
+}
+
+.thunder {
+  margin-top: 50px;
+}
+
+@media screen and (min-width: 1000px) {
+  .story .column {
+    width: 50%;
+    min-width: 500px;
+  }
+}

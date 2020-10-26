@@ -43,7 +43,7 @@ class Navbar extends React.Component {
             <NavLink to="/" className="active link">
               Perfiles
             </NavLink>
-            <NavLink to="/about" className="link">
+            <NavLink to="#mapa" className="link">
               Mapa
             </NavLink>
             <NavLink to="/marcos-de-referencia" className="link">

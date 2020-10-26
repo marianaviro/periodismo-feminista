@@ -8,9 +8,17 @@ footer {
   padding-top: 50px;
 }
 
-.credits img:hover {
+.credits img.hov:hover {
   filter: brightness(120%);
   cursor: pointer;
+}
+
+.credits img.no-hov {
+  max-width: 250px;
+}
+
+.credits .fire {
+  margin-bottom: 40px;
 }
 
 .footer {
@@ -40,17 +48,18 @@ footer {
   margin: 30px;
 }
 
-.footer .credits {
+.footer .thanks {
   line-height: 1.7em;
   display: flex;
   align-content: flex-start;
+  margin-bottom: 80px;
 }
 
-.footer .credits p {
+.footer .thanks p {
   width: 250px;
 }
 
-.footer .credits img {
+.footer .thanks img {
   align-self: flex-start;
   margin-top: -10px;
   margin-left: 20px;
@@ -67,20 +76,32 @@ footer {
   margin-right: 30px;
 }
 
-.footer .cc {
+.cc {
   line-height: 1.2em;
   font-family: 'acumin-pro', sans-serif;
   font-weight: 300;
   font-style: normal;
   font-size: 10.5px;
+  width: 100%;
+  display: block;
+  text-align: center;
+  color: #fff;
+  background-color: #1e1e1e;
 }
 
-.footer .cc img {
+.cc img {
   width: 130px;
   height: auto;
 }
 
-.footer .cc p {
-  width: 500px;
-  padding: 0px 50px;
+.cc p {
+  max-width: 500px;
+  padding: 20px 50px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 698px) {
+  .credits img.no-hov {
+    max-width: 350px;
+  }
 }
