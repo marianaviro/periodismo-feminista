@@ -1,9 +1,17 @@
 import Head from 'next/head';
 import Layout from '../components/layout';
 import Iframe from '../components/iframe';
+import Map from '../components/map';
+import CountryCard from '../components/countryCard';
 import styles from '../styles/home.module.css';
+import { useState } from 'react';
 
 export default function Home() {
+  const [selectedCountry, setSelectedCountry] = useState();
+
+  const onCountrySelected = (geo) => {
+    setSelectedCountry(geo);
+  };
   return (
     <Layout>
       <Head>
@@ -60,6 +68,13 @@ export default function Home() {
         <div className={styles.vizBannerIframe}>
           <Iframe src="/viz/v.html" height="100%" />
         </div>
+      </div>
+      <div>
+        <Map
+          selectedCountry={selectedCountry}
+          onCountrySelected={onCountrySelected}
+        />
+        <CountryCard selectedCountry={selectedCountry} />
       </div>
     </Layout>
   );
