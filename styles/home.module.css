@@ -28,6 +28,8 @@
 
 .homeIntroImage {
   justify-self: center;
+  padding-right: 0px;
+  text-align: center;
 }
 
 .homeIntroImage img {
@@ -41,7 +43,7 @@
   background-color: #1e1e1e;
   color: #ffffff;
   display: flex;
-  padding: 100px 16px;
+  padding: 120px 0px 20px 0px;
   position: relative;
   text-align: center;
   font-family: 'league-gothic', sans-serif;
@@ -50,13 +52,13 @@
 
 .articleBanner h3 {
   flex: 2;
-  font-size: 36px;
+  font-size: 40px;
   font-style: italic;
   text-transform: uppercase;
 }
 
 .articleBanner picture {
-  display: none;
+  /* display: none; */
   flex: 1;
 }
 
@@ -69,6 +71,18 @@
 .vizBannerText {
   align-items: flex-start;
   display: flex;
+}
+
+@media screen and (min-width: 640px) {
+
+  .homeIntroImage img {
+    max-width: 400px;
+  }
+
+  .articleBanner h3 {
+    font-size: 48px;
+  }
+
 }
 
 @media screen and (min-width: 768px) {
@@ -91,10 +105,6 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .homeIntroImage img {
-    max-width: 400px;
-  }
-
 }
 
 @media screen and (min-width: 840px) {
@@ -107,24 +117,16 @@
     width: 50%;
   }
 
+  .homeIntroImage {
+    padding-right: 20px;
+  }
+
   .homeIntroText p {
     padding-top: 0px;
   }
 
   .homeIntroImage img {
     padding: 0px;
-  }
-
-}
-
-@media screen and (min-width: 1024px) {
-
-  .homeIntro {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .articleBanner h3 {
-    font-size: 48px;
   }
 
 }

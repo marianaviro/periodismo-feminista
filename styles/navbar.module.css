@@ -33,6 +33,10 @@
   outline: none;
 }
 
+.navbarBurger:hover {
+  filter: hue-rotate(70deg) brightness(140%);
+}
+
 .navbarLeft {
   display: none;
 }

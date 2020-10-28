@@ -18,7 +18,7 @@ export default function Home() {
         <title>Periodismo feminista de América Latina</title>
       </Head>
       <div className={styles.homeIntro}>
-        
+
         <div className={styles.homeIntroText}>
           <p>
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
@@ -38,7 +38,7 @@ export default function Home() {
       </div>
       <div className={styles.articleBanner}>
         <picture>
-          <source media="(min-width: 1024px)" srcSet="/images/galaxy-izq.png" />
+          <source media="(min-width: 900px)" srcSet="/images/galaxy-izq.png" />
           <img src="/images/galaxy-small-izq.png" />
         </picture>
         <h3>
@@ -46,7 +46,7 @@ export default function Home() {
           Título del artículo
         </h3>
         <picture>
-          <source media="(min-width: 1024px)" srcSet="/images/galaxy-der.png" />
+          <source media="(min-width: 900px)" srcSet="/images/galaxy-der.png" />
           <img src="/images/galaxy-small-der.png" />
         </picture>
       </div>
