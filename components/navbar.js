@@ -28,12 +28,15 @@ export default function Navbar() {
             alt="Ícono de menú desplegable"
           />
         </button>
+        <button className={styles.menuClose} onClick={toggleMenu}>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30"><path d="M16.24 14.83a1 1 0 0 1-1.41 1.41L12 13.41l-2.83 2.83a1 1 0 0 1-1.41-1.41L10.59 12 7.76 9.17a1 1 0 0 1 1.41-1.41L12 10.59l2.83-2.83a1 1 0 0 1 1.41 1.41L13.41 12l2.83 2.83z"/></svg>
+        </button>
       </div>
       <div className={styles.navbarLeft}>
         <Link href="/">
           <a className={styles.navbarLink}>Perfiles</a>
         </Link>
-        <Link href="/">
+        <Link href="#mapa">
           <a className={styles.navbarLink}>Mapa</a>
         </Link>
         <Link href="/">

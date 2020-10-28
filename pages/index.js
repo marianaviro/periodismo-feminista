@@ -15,15 +15,18 @@ export default function Home() {
   return (
     <Layout>
       <Head>
-        <title>Periodismo feminista</title>
+        <title>Periodismo feminista de América Latina</title>
       </Head>
       <div className={styles.homeIntro}>
         <div></div>
         <div className={styles.homeIntroText}>
           <p>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-            volutpat.
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+            sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+            magna aliquam erat volutpat. Lorem ipsum dolor sit amet,
+            consectetuer adipiscing elit, sed diam nonummy nibh euismod
+            tincidunt ut laoreet dolore magna aliquam erat volutpat.
+            Ut wisi enim ad minim veniam, quis nostrud exerci.
           </p>
         </div>
         <div className={styles.homeIntroImage}>
@@ -65,7 +68,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className={styles.vizBannerIframe}>
+        <div id="mapa" className={styles.vizBannerIframe}>
           <Iframe src="/viz/v.html" height="100%" />
         </div>
       </div>

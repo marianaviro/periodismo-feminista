@@ -4,6 +4,9 @@
   display: flex;
   justify-content: space-between;
   padding: 20px;
+  font-family: 'league-gothic', sans-serif;
+  font-style: italic;
+  letter-spacing: 0.07em;
 }
 
 .navbarRight {
@@ -14,7 +17,7 @@
 }
 
 .navbarLogo {
-  max-width: 150px;
+  max-width: 200px;
 }
 
 .navbarBurger {
@@ -39,6 +42,23 @@
   font-size: 20px;
   font-style: italic;
   text-decoration: none;
+  padding: 10px;
+}
+
+.navbarLink:focus {
+  outline: none;
+}
+
+.navbarLink:first-of-type {
+  padding-top: 20px;
+}
+
+.navbarLink:last-of-type {
+  padding-bottom: 20px;
+}
+
+.navbarSocial {
+  padding-left: 10px;
 }
 
 .navbarLink:hover {
@@ -63,8 +83,38 @@
   z-index: 10;
 }
 
+.isOpen .navbarBurger {
+  display: none;
+}
+
 .navbarLeft > * ~ * {
   margin-top: 8px;
+}
+
+.menuClose {
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  z-index: 20;
+  position: fixed;
+  right: 20px;
+  display: none;
+}
+
+.isOpen .menuClose {
+  display: block;
+}
+
+.menuClose svg {
+  fill: #ffffff;
+}
+
+.menuClose:hover svg {
+  fill: #ff4adc;
+}
+
+.menuClose:hover {
+  cursor: pointer;
 }
 
 @media screen and (min-width: 1024px) {
@@ -91,4 +141,25 @@
     margin-left: 32px;
     margin-top: 0;
   }
+
+  .navbarLink {
+    padding: 0px;
+  }
+
+  .navbarLink:first-of-type {
+    padding-top: 0px;
+  }
+
+  .navbarLink:last-of-type {
+    padding-bottom: 0px;
+  }
+
+  .navbarSocial {
+    padding-left: 0px;
+  }
+
+  .menuClose {
+    display: none;
+  }
+
 }
