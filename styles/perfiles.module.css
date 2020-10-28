@@ -1,0 +1,26 @@
+.perfil {
+  background-color: #fff;
+  font-family: league-gothic, sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.009em;
+}
+
+.perfil .titlePerfil {
+  background-color: #1e1e1e;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: baseline;
+}
+
+.perfil .titlePerfil h1 {
+  font-size: 5rem;
+}
+
+.perfil .titlePerfil img {
+  width: 100px;
+  height: auto;
+}

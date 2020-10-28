@@ -7,7 +7,7 @@ import styles from '../styles/home.module.css';
 import { useState } from 'react';
 
 export default function Home() {
-  const [selectedCountry, setSelectedCountry] = useState();
+  const [selectedCountry, setSelectedCountry] = useState({ ISO_A3: 'ARG' });
 
   const onCountrySelected = (geo) => {
     setSelectedCountry(geo);
@@ -95,14 +95,27 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className={styles.mapaContainer} id="mapa-de-medios">
-        <Map
-          selectedCountry={selectedCountry}
-          onCountrySelected={onCountrySelected}
-        />
-        <CountryCard
-          selectedCountry={selectedCountry}
-        />
+      <div id="mapa-de-medios">
+        <div className={styles.mapaTitleContainer}>
+          <div className={styles.mapaTitle}>
+            <img className={styles.mapaTitleBg} src="/images/mapa-medios-bg.png"/>
+            <img className={styles.mapaTitleSvg} src="/images/mapa-medios.svg"/>
+          </div>
+          <div className={styles.directions}>
+            <p>Selecciona algún país para consultar los medios que hemos identificado.</p>
+          </div>
+        </div>
+        <div className={styles.mapaContainer}>
+          <Map
+            selectedCountry={selectedCountry}
+            onCountrySelected={onCountrySelected}
+          />
+          <CountryCard
+            selectedCountry={selectedCountry}
+          />
+        </div>
+        <div className={styles.fuego}>
+        </div>
       </div>
     </Layout>
   );

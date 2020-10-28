@@ -20,14 +20,16 @@ function Map({ onCountrySelected, selectedCountry }) {
       <ComposableMap
         projection="geoAzimuthalEqualArea"
         projectionConfig={{
-          rotate: [58, 20, 0],
-          scale: 300,
+          rotate: [75, 20, 0],
+          scale: 250
         }}
+        width='450'
+        height='450'
       >
         <Geographies geography={geoUrl}>
           {({ geographies }) =>
             geographies
-              .filter((d) => d.properties.REGION_UN === 'Americas')
+              .filter((d) => d.properties.REGION_UN === 'Americas' && d.properties.ISO_A3 !== 'USA')
               .map((geo) => (
                 <Geography
                   key={geo.rsmKey}
@@ -41,15 +43,15 @@ function Map({ onCountrySelected, selectedCountry }) {
                         ? (countriesISO.includes(geo.properties.ISO_A3)
                         ? '#ff4adc'
                         : '#a0a0a0')
-                        : (countriesISO.includes(geo.properties.ISO_A3)
+                        : (countriesISO.includes(geo.properties.ISO_A3) || geo.properties.ISO_A3 === 'USA'
                         ? 'transparent'
                         : '#e2e2e2'),
                       outline: 'none',
                     },
                     hover: {
-                      fill: countriesISO.includes(geo.properties.ISO_A3) ? '#ff4adc' : '#a0a0a0',
+                      fill: geo.properties.ISO_A3 === 'USA' ? 'transparent' : (countriesISO.includes(geo.properties.ISO_A3) ? '#ff4adc' : '#a0a0a0'),
                       outline: 'none',
-                      cursor: 'pointer',
+                      cursor: geo.properties.ISO_A3 === 'USA' ? 'not-allowed' : 'pointer',
                     },
                     pressed: {
                       fill: '#ff4adc',

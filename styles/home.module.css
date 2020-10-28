@@ -74,7 +74,7 @@
 }
 
 .vizBannerContainer {
-  padding: 50px 0px;
+  padding: 50px 0px 0px 0px;
 }
 
 .vizBannerIframe, .vizBannerText {
@@ -128,26 +128,61 @@
   height: auto;
 }
 
+.mapaTitle {
+  display: flex;
+  justify-content: center;
+  padding: 50px 20px 30px 30px;
+  flex-wrap: nowrap;
+}
+
+.mapaTitleBg {
+  position: relative;
+  right: -30px;
+  z-index: -999;
+}
+
+.mapaTitleSvg {
+  z-index: 999;
+  margin-right: 50px;
+}
+
+.mapaTitle img {
+  height: 150px;
+}
+
+.mapaTitleContainer .directions {
+  font-family: 'league-gothic', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.009em;
+  font-size: 1.4rem;
+  line-height: 1.2em;
+  margin: 0px auto 40px auto;
+  text-align: center;
+  width: 80%;
+}
+
 .mapaContainer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  padding: 0 0 10px 0px;
 }
 
 .mapa {
-  width: 70%;
-}
-
-.mapa, .countryCard {
-  /* min-width: 400px; */
+  width: 100%;
 }
 
 .countryCard {
-  width: 350px;
+  min-width: 300px;
+  max-width: 999px;
+  width: 70%;
   border: 1px solid #1e1e1e;
   box-shadow: 4px 4px 0px #1e1e1e;
-  padding: 30px;
+  padding: 10px 15px 30px 15px;
+  margin-top: -20px;
+  margin-right: 50px;
+  margin-left: 5%;
   font-family: 'league-gothic', sans-serif;
   font-style: normal;
   letter-spacing: 0.009em;
@@ -156,33 +191,39 @@
 
 .countryCard .countryTitle {
   font-style: italic;
-  font-size: 2rem;
+  font-size: 1.7rem;
   color: #ff4adc;
   font-weight: 400;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .countryCard .countryMedia {
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .countryCard .media {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  margin-top: 20px;
+  align-items: center;
+  margin: 30px 10px 0px 0px;
+  width: 260px;
 }
 
 .countryCard .mediaName {
-  font-size: 2.3rem;
+  font-size: 1.7rem;
   font-weight: 400;
   margin-bottom: 5px;
   text-transform: uppercase;
 }
 
 .countryCard .sparks {
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   background-image: url("/images/sparks2.svg");
   background-position: center;
   display: inline-block;
@@ -214,19 +255,47 @@
 }
 
 .countryCard .mediaNotFound {
-  font-family: 'acumin-pro', sans-serif;
-  font-weight: 300;
   font-family: 'league-gothic', sans-serif;
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0.009em;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   line-height: 1.2em;
   margin-top: 10px;
+  text-align: center;
 }
 
 .countryCard .mediaNotFound p {
   margin-bottom: 20px;
+}
+
+.countryCard .otherMedia {
+  font-family: 'league-gothic', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.009em;
+  font-size: 1.2rem;
+  line-height: 1em;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.countryCard .otherMedia p {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.countryCard .otherMedia .separator {
+  height: 25px;
+  width: auto;
+}
+
+.fuego {
+  background-image: url("/images/fuego.svg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100px;
 }
 
 @media screen and (min-width: 640px) {
@@ -276,6 +345,73 @@
 
   .story {
     margin-left: 20px;
+  }
+
+  .mapaTitle {
+    padding: 50px;
+  }
+
+  .mapaTitle img {
+    height: 200px;
+  }
+
+}
+
+@media screen and (min-width: 795px) {
+
+  .mapa {
+    max-width: 60%;
+    width: 60%;
+  }
+
+  .mapaContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 0 70px 0px 10px;
+  }
+
+  .mapaTitleContainer .directions {
+    text-align: right;
+    margin-bottom: 50px;
+  }
+
+  .mapaTitle {
+    justify-content: flex-end;
+    padding-bottom: 15px;
+  }
+
+  .countryCard {
+    min-width: 250px;
+    max-width: 350px;
+    width: 30%;
+    padding: 30px;
+    margin-right: 0;
+  }
+
+  .countryCard .countryMedia {
+    display: block;
+  }
+
+  .countryCard .countryTitle {
+    text-align: left;
+  }
+
+  .countryCard .media {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px 0px;
+  }
+
+  .countryCard .sparks {
+    width: 30px;
+    height: 30px;
+  }
+
+  .fuego {
+    background-position: right;
   }
 
 }

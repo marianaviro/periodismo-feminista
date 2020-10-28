@@ -4,6 +4,7 @@ import MarkdownIt from 'markdown-it';
 import db from '../../db.json';
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
+import styles from '../../styles/perfiles.module.css';
 
 export default function Profile() {
   const router = useRouter();
@@ -22,12 +23,19 @@ export default function Profile() {
       <Head>
         <title>{profile.profile_title} · Periodismo feminista</title>
       </Head>
-      <h1>{profile.profile_title}</h1>
-      <div
-        dangerouslySetInnerHTML={{
-          __html: md.render(profile.profile_body),
-        }}
-      ></div>
+      <div className={styles.perfil}>
+        <div className={styles.titlePerfil}>
+          <h1>{profile.profile_title}</h1>
+          <img src="/images/ilustracion-creditos.svg" alt="Ver créditos" />
+        </div>
+        <div className={styles.textPerfil}>
+          <div
+            dangerouslySetInnerHTML={{
+              __html: md.render(profile.profile_body),
+            }}
+          ></div>
+        </div>
+      </div>
     </Layout>
   ) : null;
 }
