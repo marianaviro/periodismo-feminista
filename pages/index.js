@@ -50,29 +50,53 @@ export default function Home() {
           <img src="/images/galaxy-small-der.png" />
         </picture>
       </div>
-      <div className={styles.vizBanner}>
-        <div className={styles.vizBannerText}>
-          <img src="/images/rayo.svg" style={{ width: '20px' }} />
-          <div style={{ marginLeft: '20px' }}>
-            <h3 className="story-title">LOREM IPSUM DOLOR SIT AMET,</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-              erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
-              tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-              consequat. Duis autem vel eum iriure dolor in hendrerit in
-              vulputate velit esse molestie consequat, vel illum dolore eu
-              feugiat nulla facilisis at vero eros et accumsan et iusto odio
-              dignissim qui blandit praesent luptatum zzril delenit augue duis
-              dolore te feugait nulla facilisi.
-            </p>
+      <div className={styles.vizBannerContainer}>
+        <div className={styles.vizBanner}>
+          <div className={styles.vizBannerText}>
+            <img className={styles.rayo} src="/images/rayo.svg"/>
+            <div className={styles.story}>
+              <h3 className={styles.storyTitle}>LOREM IPSUM DOLOR SIT AMET,</h3>
+              <p className={styles.storyText}>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+                erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
+                tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+                consequat. Duis autem vel eum iriure dolor in hendrerit in
+                vulputate velit esse molestie consequat, vel illum dolore eu
+                feugiat nulla facilisis at vero eros et accumsan et iusto odio
+                dignissim qui blandit praesent luptatum zzril delenit augue duis
+                dolore te feugait nulla facilisi.
+              </p>
+            </div>
+          </div>
+          <div className={styles.vizBannerIframe}>
+            <Iframe src="/viz/v.html" height="100%" />
           </div>
         </div>
-        <div id="mapa" className={styles.vizBannerIframe}>
-          <Iframe src="/viz/v.html" height="100%" />
+        <div className={styles.vizBanner}>
+          <div className={styles.vizBannerText}>
+            <img className={styles.rayo} src="/images/rayo.svg"/>
+            <div className={styles.story}>
+              <h3 className={styles.storyTitle}>LOREM IPSUM DOLOR SIT AMET,</h3>
+              <p className={styles.storyText}>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+                erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
+                tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+                consequat. Duis autem vel eum iriure dolor in hendrerit in
+                vulputate velit esse molestie consequat, vel illum dolore eu
+                feugiat nulla facilisis at vero eros et accumsan et iusto odio
+                dignissim qui blandit praesent luptatum zzril delenit augue duis
+                dolore te feugait nulla facilisi.
+              </p>
+            </div>
+          </div>
+          <div className={styles.vizBannerIframe}>
+            <Iframe src="/viz/v.html" height="100%" />
+          </div>
         </div>
       </div>
-      <div>
+      <div id="mapa">
         <Map
           selectedCountry={selectedCountry}
           onCountrySelected={onCountrySelected}
