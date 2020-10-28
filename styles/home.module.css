@@ -4,14 +4,26 @@
   font-family: 'acumin-pro', sans-serif;
   font-style: normal;
   font-weight: 300;
-  display: grid;
+  /* display: grid; */
   padding: 0 20px;
-  grid-gap: 16px;
+  /* grid-gap: 16px; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.homeIntroText, .homeIntroImage {
+  max-width: 500px;
+  min-width: 400px;
+  width: 80%;
 }
 
 .homeIntroText p {
   margin: 0 auto;
   width: 80%;
+  padding-top: 50px;
 }
 
 .homeIntroImage {
@@ -21,6 +33,7 @@
 .homeIntroImage img {
   max-width: 320px;
   vertical-align: middle;
+  padding-top: 50px;
 }
 
 .articleBanner {
@@ -31,6 +44,8 @@
   padding: 100px 16px;
   position: relative;
   text-align: center;
+  font-family: 'league-gothic', sans-serif;
+  font-style: italic;
 }
 
 .articleBanner h3 {
@@ -57,6 +72,7 @@
 }
 
 @media screen and (min-width: 768px) {
+
   .homeIntro {
     grid-template-columns: 0 1fr 1fr;
     align-items: center;
@@ -74,9 +90,35 @@
   .vizBanner {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .homeIntroImage img {
+    max-width: 400px;
+  }
+
+}
+
+@media screen and (min-width: 840px) {
+
+  .homeIntro {
+    justify-content: flex-end;
+  }
+
+  .homeIntroText, .homeIntroImage {
+    width: 50%;
+  }
+
+  .homeIntroText p {
+    padding-top: 0px;
+  }
+
+  .homeIntroImage img {
+    padding: 0px;
+  }
+
 }
 
 @media screen and (min-width: 1024px) {
+
   .homeIntro {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -84,4 +126,5 @@
   .articleBanner h3 {
     font-size: 48px;
   }
+
 }

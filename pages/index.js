@@ -18,7 +18,7 @@ export default function Home() {
         <title>Periodismo feminista de América Latina</title>
       </Head>
       <div className={styles.homeIntro}>
-        <div></div>
+        
         <div className={styles.homeIntroText}>
           <p>
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
