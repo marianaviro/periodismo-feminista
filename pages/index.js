@@ -36,7 +36,7 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className={styles.articleBanner}>
+      <div id="articulo" className={styles.articleBanner}>
         <picture>
           <source media="(min-width: 900px)" srcSet="/images/galaxy-izq.png" />
           <img src="/images/galaxy-small-izq.png" />

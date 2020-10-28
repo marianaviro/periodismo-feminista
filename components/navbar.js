@@ -33,14 +33,14 @@ export default function Navbar() {
         </button>
       </div>
       <div className={styles.navbarLeft}>
-        <Link href="/">
-          <a className={styles.navbarLink}>Perfiles</a>
+        <Link href="#articulo">
+          <a className={styles.navbarLink}>Artículo</a>
         </Link>
         <Link href="#mapa">
           <a className={styles.navbarLink}>Mapa</a>
         </Link>
-        <Link href="/">
-          <a className={styles.navbarLink}>Artículos</a>
+        <Link href="/creditos">
+          <a className={styles.navbarLink}>Créditos</a>
         </Link>
         <div className={styles.navbarSocial}>
           <a href="https://www.twitter.com" alt="Compartir en Twitter" target="_blank">

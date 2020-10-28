@@ -1,12 +1,22 @@
 .footerContainer {
   background-color: #1e1e1e;
   color: #ffffff;
-  padding: 64px 16px;
+  padding: 64px 16px 20px 16px;
+  font-family: 'acumin-pro', sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
 .credits {
   width: 100%;
   text-align: center;
+  padding-bottom: 50px;
+}
+
+.fuego {
+  text-align: center;
+  padding-bottom: 50px;
+  max-width: 300px;
 }
 
 .hovered:hover {
@@ -15,33 +25,58 @@
 }
 
 .footer {
-  display: grid;
+  /* display: grid; */
   font-weight: 300;
-  padding: 48px 0;
-  grid-gap: 32px;
-  justify-items: center;
+  /* padding: 48px 0; */
+  /* grid-gap: 32px;
+  justify-items: center; */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .footerItem {
-  padding: 0 8px;
+  /* padding: 0 8px; */
+  min-width: 300px;
+  margin-bottom: 70px;
+  text-align: center;
+  padding: 0px 20px;
+}
+
+.logoPF {
+  min-width: 180px;
+  max-width: 400px;
+  text-align: center;
+}
+
+.logoUniandes {
+  max-width: 350px;
+  text-align: center;
 }
 
 .thanks {
-  max-width: 80%;
+  /* max-width: 100%; */
+  min-width: 300px;
+  max-width: 400px;
+  font-size: 0.875rem;
+  background-image: url("/images/sparks.svg");
+  background-position: right top;
+  background-repeat: no-repeat;
+  padding: 0px 50px;
+  text-align: left;
 }
 
-.sparks {
+/* .sparks {
   position: absolute;
   right: 0;
   top: -32px;
-}
+} */
 
 
 .cc {
   line-height: 1.2em;
-  font-family: 'acumin-pro', sans-serif;
-  font-weight: 300;
-  font-style: normal;
   font-size: 12px;
   width: 100%;
   display: block;
@@ -54,15 +89,25 @@
 }
 
 .cc p {
-  max-width: 500px;
-  padding: 20px 50px;
+  max-width: 550px;
+  padding: 20px 40px;
   margin: 0 auto;
 }
 
+@media screen and (min-width: 840px) {
+
+  .fuego {
+    max-width: 400px;
+  }
+
+}
+
 @media screen and (min-width: 768px) {
+
   .footer {
     align-items: center;
-    grid-gap: 16px;
-    grid-template-columns: repeat(3, 1fr);
+    /* grid-gap: 16px;
+    grid-template-columns: repeat(3, 1fr); */
   }
+
 }

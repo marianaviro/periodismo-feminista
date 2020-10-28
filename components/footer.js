@@ -10,7 +10,7 @@ export default function Footer() {
       <div className={styles.credits}>
         {router.pathname === '/creditos' ? (
           <div>
-            <img src="/images/fuego.svg" alt="Ilustración de llamas de fuego" />
+            <img className={styles.fuego} src="/images/fuego.svg" alt="Ilustración de llamas de fuego" />
           </div>
         ) : (
           <Link href="/creditos">
@@ -26,31 +26,30 @@ export default function Footer() {
       </div>
       <div className={styles.footer}>
         <div className={styles.footerItem}>
-          <img
-            src="/images/logo-small.svg"
-            className="logo item"
-            alt="Logo de Periodismo feminista"
-          />
+          <Link href="/">
+            <a>
+              <img
+                src="/images/logo-small.svg"
+                className={styles.logoPF}
+                alt="Logo de Periodismo feminista"
+              />
+            </a>
+          </Link>
         </div>
         <div className={styles.footerItem}>
           <img
             src="/images/logo-uniandes.png"
-            className="logo item"
+            className={styles.logoUniandes}
             alt="Logo del Centro de Investigación y Creación de la Facultad de Artes y Humanidades de la Universidad de los Andes"
           />
         </div>
-        <div className={`${styles.footerItem} relative`}>
+        <div className={styles.footerItem}>
           <p className={styles.thanks}>
             Este proyecto fue realizado por Johan Sebastián Romero Rodríguez
             como parte de su proyecto de grado de la maestría en Periodismo de
             la Universidad de los Andes. Diseño y desarrollo web por Mariana
             Villamizar Rodríguez.
           </p>
-          <img
-            className={styles.sparks}
-            src="/images/sparks.svg"
-            alt="Ilustración de destellos"
-          />
         </div>
       </div>
       <div className={styles.cc}>
