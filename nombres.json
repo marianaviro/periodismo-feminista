@@ -1,0 +1,114 @@
+[
+  {
+    "country": "Argentina",
+    "country_code": "ARG"
+  },
+  {
+    "country": "Bolivia",
+    "country_code": "BOL"
+  },
+  {
+    "country": "Bahamas",
+    "country_code": "BHS"
+  },
+  {
+    "country": "Colombia",
+    "country_code": "COL"
+  },
+  {
+    "country": "Cuba",
+    "country_code": "CUB"
+  },
+  {
+    "country": "Estados Unidos de América",
+    "country_code": "USA"
+  },
+  {
+    "country": "Guatemala",
+    "country_code": "GTM"
+  },
+  {
+    "country": "México",
+    "country_code": "MEX"
+  },
+  {
+    "country": "Paraguay",
+    "country_code": "PRY"
+  },
+  {
+    "country": "Puerto Rico",
+    "country_code": "PRI"
+  },
+  {
+    "country": "Uruguay",
+    "country_code": "URY"
+  },
+  {
+    "country": "Jamaica",
+    "country_code": "JAM"
+  },
+  {
+    "country": "Haití",
+    "country_code": "HTI"
+  },
+  {
+    "country": "República Dominicana",
+    "country_code": "DOM"
+  },
+  {
+    "country": "Belice",
+    "country_code": "BLZ"
+  },
+  {
+    "country": "El Salvador",
+    "country_code": "SLV"
+  },
+  {
+    "country": "Honduras",
+    "country_code": "HND"
+  },
+  {
+    "country": "Nicaragua",
+    "country_code": "NIC"
+  },
+  {
+    "country": "Costa Rica",
+    "country_code": "CRI"
+  },
+  {
+    "country": "Panamá",
+    "country_code": "PAN"
+  },
+  {
+    "country": "Venezuela",
+    "country_code": "VEN"
+  },
+  {
+    "country": "Ecuador",
+    "country_code": "ECU"
+  },
+  {
+    "country": "Guyana",
+    "country_code": "GUY"
+  },
+  {
+    "country": "Surinam",
+    "country_code": "SUR"
+  },
+  {
+    "country": "Perú",
+    "country_code": "PER"
+  },
+  {
+    "country": "Brasil",
+    "country_code": "BRA"
+  },
+  {
+    "country": "Chile",
+    "country_code": "CHL"
+  },
+  {
+    "country": "Islas Malvinas",
+    "country_code": "FLK"
+  }
+]

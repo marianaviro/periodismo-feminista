@@ -48,6 +48,7 @@
   text-align: center;
   font-family: 'league-gothic', sans-serif;
   font-style: italic;
+  font-weight: 400;
 }
 
 .articleBanner h3 {
@@ -127,7 +128,7 @@
   height: auto;
 }
 
-#mapa-de-medios {
+.mapaContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -135,15 +136,97 @@
 }
 
 .mapa {
-  width: 75%;
+  width: 70%;
 }
 
 .mapa, .countryCard {
-  min-width: 400px;
+  /* min-width: 400px; */
 }
 
 .countryCard {
-  border: 3px solid #1e1e1e;
+  width: 350px;
+  border: 1px solid #1e1e1e;
+  box-shadow: 4px 4px 0px #1e1e1e;
+  padding: 30px;
+  font-family: 'league-gothic', sans-serif;
+  font-style: normal;
+  letter-spacing: 0.009em;
+  color: #1e1e1e;
+}
+
+.countryCard .countryTitle {
+  font-style: italic;
+  font-size: 2rem;
+  color: #ff4adc;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.countryCard .countryMedia {
+  list-style: none;
+}
+
+.countryCard .media {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.countryCard .mediaName {
+  font-size: 2.3rem;
+  font-weight: 400;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.countryCard .sparks {
+  width: 30px;
+  height: 30px;
+  background-image: url("/images/sparks2.svg");
+  background-position: center;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 5px;
+}
+
+.countryCard .mediaLink, .countryCard .mediaNotFound .mediaLink {
+  font-family: 'league-gothic', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.009em;
+  text-decoration: none;
+  color: #1e1e1e;
+  border: 1px solid #1e1e1e;
+  font-size: 1.3rem;
+  padding: 3px 9px;
+  text-transform: uppercase;
+}
+
+.countryCard .mediaLink:hover {
+  text-decoration: none;
+  background-color: #ff4adc;
+  color: #fff;
+  border: none;
+  font-size: 1.3rem;
+  padding: 4px 9px;
+}
+
+.countryCard .mediaNotFound {
+  font-family: 'acumin-pro', sans-serif;
+  font-weight: 300;
+  font-family: 'league-gothic', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.009em;
+  font-size: 1.5rem;
+  line-height: 1.2em;
+  margin-top: 10px;
+}
+
+.countryCard .mediaNotFound p {
+  margin-bottom: 20px;
 }
 
 @media screen and (min-width: 640px) {

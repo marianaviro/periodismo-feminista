@@ -95,7 +95,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div id="mapa-de-medios">
+      <div className={styles.mapaContainer} id="mapa-de-medios">
         <Map
           selectedCountry={selectedCountry}
           onCountrySelected={onCountrySelected}
