@@ -1,11 +1,22 @@
 import { ComposableMap, Geographies, Geography } from 'react-simple-maps';
+import { useEffect, useState } from 'react';
+import styles from '../styles/home.module.css';
+import db from '../db.json';
 
 const geoUrl =
   'https://raw.githubusercontent.com/zcreativelabs/react-simple-maps/master/topojson-maps/world-110m.json';
 
 function Map({ onCountrySelected, selectedCountry }) {
+
+  const [countriesISO, setCountriesISO] = useState();
+
+  useEffect(() => {
+    const iso = Array.from(new Set(db.map((record) => record.country_code)));
+    setCountriesISO(iso);
+  }, []);
+
   return (
-    <div>
+    <div className={styles.mapa}>
       <ComposableMap
         projection="geoAzimuthalEqualArea"
         projectionConfig={{
@@ -26,14 +37,19 @@ function Map({ onCountrySelected, selectedCountry }) {
                   style={{
                     default: {
                       fill:
-                        selectedCountry?.ISO_A2 === geo.properties.ISO_A2
-                          ? '#ff4adc'
-                          : 'transparent',
+                        selectedCountry?.ISO_A3 === geo.properties.ISO_A3
+                        ? (countriesISO.includes(geo.properties.ISO_A3)
+                        ? '#ff4adc'
+                        : '#a0a0a0')
+                        : (countriesISO.includes(geo.properties.ISO_A3)
+                        ? 'transparent'
+                        : '#e2e2e2'),
                       outline: 'none',
                     },
                     hover: {
-                      fill: '#ff4adc',
+                      fill: countriesISO.includes(geo.properties.ISO_A3) ? '#ff4adc' : '#a0a0a0',
                       outline: 'none',
+                      cursor: 'pointer',
                     },
                     pressed: {
                       fill: '#ff4adc',

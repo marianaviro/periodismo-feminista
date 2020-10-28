@@ -18,7 +18,6 @@ export default function Home() {
         <title>Periodismo feminista de América Latina</title>
       </Head>
       <div className={styles.homeIntro}>
-
         <div className={styles.homeIntroText}>
           <p>
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
@@ -96,12 +95,14 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div id="mapa">
+      <div id="mapa-de-medios">
         <Map
           selectedCountry={selectedCountry}
           onCountrySelected={onCountrySelected}
         />
-        <CountryCard selectedCountry={selectedCountry} />
+        <CountryCard
+          selectedCountry={selectedCountry}
+        />
       </div>
     </Layout>
   );

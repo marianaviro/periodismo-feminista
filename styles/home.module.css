@@ -16,8 +16,8 @@
 
 .homeIntroText, .homeIntroImage {
   max-width: 500px;
-  min-width: 400px;
-  width: 80%;
+  /* min-width: 400px; */
+  /* width: 80%; */
 }
 
 .homeIntroText p {
@@ -125,6 +125,25 @@
 .rayo {
   min-width: 20px;
   height: auto;
+}
+
+#mapa-de-medios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.mapa {
+  width: 75%;
+}
+
+.mapa, .countryCard {
+  min-width: 400px;
+}
+
+.countryCard {
+  border: 3px solid #1e1e1e;
 }
 
 @media screen and (min-width: 640px) {

@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import db from '../db.json';
+import styles from '../styles/home.module.css';
 
 export default function CountryCard({ selectedCountry }) {
   const [media, setMedia] = useState([]);
@@ -13,16 +14,16 @@ export default function CountryCard({ selectedCountry }) {
   }, [selectedCountry]);
 
   return selectedCountry ? (
-    <div className="p-4 bg-white shadow-md absolute top-0 right-0 w-64 h-64 overflow-y-auto">
-      <h2 className="text-2xl font-bold">{selectedCountry.NAME}</h2>
+    <div className={styles.countryCard}>
+      <h2 className={styles.countryTitle}>{selectedCountry.NAME}</h2>
       {!media.length ? (
-        <p>No hay organizaciones</p>
+        <p>No hemos identificado organizaciones en este país. ¿Conoces alguna? <a href="mailto:js.romero11@uniandes.edu.co">¡Escríbenos!</a></p>
       ) : (
-        <ul className="space-y-3 mt-3">
+        <ul className={styles.countryMedia}>
           {media.map((m) => (
-            <li key={m.id} className="pb-2 border-b leading-tight">
-              <span>{m.media}</span>
-              <Link href={`/perfil/${m.slug}`}>
+            <li key={m.id} className={styles.media}>
+              <span className={styles.mediaName}>{m.media}</span>
+              <Link className={styles.mediaLink} href={`/perfil/${m.slug}`}>
                 <a>Ver perfil</a>
               </Link>
             </li>
