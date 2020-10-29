@@ -1,26 +1,104 @@
 .ensayo {
-  background-color: #fff;
-  font-family: league-gothic, sans-serif;
+  background-color: #1e1e1e;
+}
+
+.ensayo .titleContainer {
+  align-items: center;
+  background-color: #1e1e1e;
+  color: #ffffff;
+  display: flex;
+  padding: 80px 0px 20px 0px;
+  position: relative;
+  text-align: center;
+  font-family: 'league-gothic', sans-serif;
   font-style: italic;
   font-weight: 400;
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 0.009em;
 }
 
 .ensayo .titleEnsayo {
-  background-color: #1e1e1e;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: baseline;
+  flex: 2;
+  font-size: 40px;
+  font-style: italic;
+  text-transform: uppercase;
+  line-height: 1.2;
+  font-weight: 400;
 }
 
-.ensayo .titleEnsayo h1 {
-  font-size: 5rem;
+.ensayo .titleContainer picture {
+  flex: 1;
 }
 
-.ensayo .titleEnsayo img {
-  width: 100px;
-  height: auto;
+.ensayo .ensayoContainer {
+  background-color: #fff;
+  font-family: 'acumin-pro', sans-serif;
+  font-style: normal;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #1e1e1e;
+  padding: 70px 50px;
+}
+
+.ensayo .ensayoText {
+  width: 90%;
+  margin-bottom: 50px;
+}
+
+.ensayo p {
+  margin-bottom: 30px;
+}
+
+.ensayo .link {
+  font-family: 'league-gothic', sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 0.009em;
+  text-decoration: none;
+  color: #1e1e1e;
+  border: 1px solid #1e1e1e;
+  font-size: 1.5rem;
+  padding: 3px 9px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.ensayo .link:hover {
+  text-decoration: none;
+  background-color: #ff4adc;
+  color: #fff;
+  border: none;
+  font-size: 1.5rem;
+  padding: 4px 9px;
+  text-align: center;
+}
+
+@media screen and (min-width: 675px) {
+
+  .ensayo .titleEnsayo h3 {
+    font-size: 48px;
+  }
+
+  .ensayo .ensayoContainer {
+    padding: 70px 100px;
+  }
+
+  .ensayo .ensayoText {
+    width: 80%;
+  }
+
+}
+
+@media screen and (min-width: 930px) {
+
+  .ensayo .ensayoText {
+    width: 70%;
+  }
+
+}
+
+@media screen and (min-width: 1100px) {
+
+  .ensayo .ensayoText {
+    width: 50%;
+  }
+
 }

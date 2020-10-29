@@ -56,6 +56,32 @@
   font-size: 40px;
   font-style: italic;
   text-transform: uppercase;
+  margin-bottom: 30px;
+  max-width: 250px;
+}
+
+.articleBanner .articleLink {
+  font-family: 'league-gothic', sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 0.009em;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  font-size: 1.5rem;
+  padding: 3px 9px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.articleBanner .articleLink:hover {
+  text-decoration: none;
+  background-color: #ff4adc;
+  color: #1e1e1e;
+  border: none;
+  font-size: 1.5rem;
+  padding: 4px 9px;
+  text-align: center;
 }
 
 .articleBanner picture {
@@ -164,7 +190,7 @@
 
 .mapaContainer {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
   justify-content: center;
   padding: 0 0 10px 0px;
 }
@@ -181,8 +207,8 @@
   box-shadow: 4px 4px 0px #1e1e1e;
   padding: 10px 15px 30px 15px;
   margin-top: -20px;
-  margin-right: 50px;
-  margin-left: 5%;
+  margin-left: 50px;
+  margin-right: 5%;
   font-family: 'league-gothic', sans-serif;
   font-style: normal;
   letter-spacing: 0.009em;
@@ -306,6 +332,7 @@
 
   .articleBanner h3 {
     font-size: 48px;
+    max-width: 500px;
   }
 
   .vizBannerIframe, .vizBannerText {
@@ -387,7 +414,7 @@
     max-width: 350px;
     width: 30%;
     padding: 30px;
-    margin-right: 0;
+    margin-left: 0;
   }
 
   .countryCard .countryMedia {

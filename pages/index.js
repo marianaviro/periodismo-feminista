@@ -3,6 +3,7 @@ import Layout from '../components/layout';
 import Iframe from '../components/iframe';
 import Map from '../components/map';
 import CountryCard from '../components/countryCard';
+import Link from 'next/link';
 import styles from '../styles/home.module.css';
 import { useState } from 'react';
 
@@ -40,10 +41,14 @@ export default function Home() {
           <source media="(min-width: 900px)" srcSet="/images/galaxy-izq.png" />
           <img src="/images/galaxy-small-izq.png" />
         </picture>
-        <h3>
-          Este es el título del artículo: <br />
-          Título del artículo
-        </h3>
+        <div className={styles.articleTitle}>
+          <h3>
+            Este es el título del artículo: Título del artículo
+          </h3>
+          <Link href="/ensayo">
+            <a className={styles.articleLink}>Leer ensayo</a>
+          </Link>
+        </div>
         <picture>
           <source media="(min-width: 900px)" srcSet="/images/galaxy-der.png" />
           <img src="/images/galaxy-small-der.png" />
@@ -106,12 +111,12 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.mapaContainer}>
+          <CountryCard
+            selectedCountry={selectedCountry}
+          />
           <Map
             selectedCountry={selectedCountry}
             onCountrySelected={onCountrySelected}
-          />
-          <CountryCard
-            selectedCountry={selectedCountry}
           />
         </div>
         <div className={styles.fuego}>

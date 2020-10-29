@@ -9,6 +9,7 @@
 }
 
 .acknowledge .credits {
+  padding-top: 70px;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -94,6 +95,11 @@
 }
 
 @media screen and (min-width: 750px) {
+
+  .acknowledge .credits {
+    padding-top: 0px;
+  }
+
   .acknowledge .credits h1 {
     font-size: 10rem;
   }

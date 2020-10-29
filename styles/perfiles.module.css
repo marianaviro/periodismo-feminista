@@ -1,6 +1,12 @@
 .perfil {
-  background-color: #fff;
-  font-family: league-gothic, sans-serif;
+  background-color: #1e1e1e;
+}
+
+.perfil .titleContainer {
+  display: block;
+  text-align: center;
+  padding: 50px 20px;
+  font-family: 'league-gothic', sans-serif;
   font-style: italic;
   font-weight: 400;
   color: #fff;
@@ -8,19 +14,147 @@
   letter-spacing: 0.009em;
 }
 
+.perfil .titleSvg img {
+  margin-bottom: 15px;
+}
+
+.perfil .titleSvg img:first-of-type {
+  margin-right: 10px;
+}
+
 .perfil .titlePerfil {
-  background-color: #1e1e1e;
   display: flex;
   justify-content: center;
   align-content: center;
   align-items: baseline;
+  line-height: 1;
+  margin-bottom: 15px;
 }
 
 .perfil .titlePerfil h1 {
-  font-size: 5rem;
+  font-size: 6rem;
 }
 
-.perfil .titlePerfil img {
-  width: 100px;
-  height: auto;
+.perfil .arrows img {
+  margin-left: 10%;
+  width: 150px;
+}
+
+.perfil .arrows img:first-of-type {
+  margin-right: 10%;
+  margin-left: 0px;
+}
+
+.perfil .perfilContainer {
+  background-color: #fff;
+  font-family: 'acumin-pro', sans-serif;
+  font-style: normal;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #1e1e1e;
+  padding: 70px 50px;
+}
+
+.perfil .perfilTitle {
+  font-family: 'league-gothic', sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.009em;
+  line-height: 1;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  max-width: 90%;
+}
+
+.perfil .perfilText {
+  width: 90%;
+  margin-bottom: 50px;
+}
+
+/* .perfil .perfilText::after {
+  content: url("/images/punto-final.svg");
+  height: 20px;
+  width: auto;
+  display: inline;
+} */
+
+.perfil br {
+  margin-bottom: 30px;
+}
+
+.perfil .link {
+  font-family: 'league-gothic', sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 0.009em;
+  text-decoration: none;
+  color: #1e1e1e;
+  border: 1px solid #1e1e1e;
+  font-size: 1.5rem;
+  padding: 3px 9px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.perfil .link:hover {
+  text-decoration: none;
+  background-color: #ff4adc;
+  color: #fff;
+  border: none;
+  font-size: 1.5rem;
+  padding: 4px 9px;
+  text-align: center;
+}
+
+@media screen and (min-width: 675px) {
+
+  .perfil .titleContainer {
+    padding: 0px 20px 50px 20px;
+  }
+
+  .perfil .titlePerfil h1 {
+    font-size: 8rem;
+  }
+
+  .perfil .arrows img {
+    width: 200px;
+  }
+
+  .perfil .perfilContainer {
+    padding: 70px 100px;
+  }
+
+  .perfil .perfilTitle {
+    max-width: 80%;
+  }
+
+  .perfil .perfilText {
+    width: 80%;
+  }
+
+}
+
+@media screen and (min-width: 930px) {
+
+  .perfil .perfilTitle {
+    max-width: 70%;
+  }
+
+  .perfil .perfilText {
+    width: 70%;
+  }
+
+}
+
+@media screen and (min-width: 1100px) {
+
+  .perfil .perfilTitle {
+    max-width: 60%;
+  }
+
+  .perfil .perfilText {
+    width: 50%;
+  }
+
 }
