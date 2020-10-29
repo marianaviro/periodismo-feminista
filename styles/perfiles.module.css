@@ -83,6 +83,14 @@
   margin-bottom: 30px;
 }
 
+.perfil a {
+  color: #ff4adc;
+}
+
+.perfil a:hover {
+  font-weight: bold;
+}
+
 .perfil .link {
   font-family: 'league-gothic', sans-serif;
   font-style: italic;

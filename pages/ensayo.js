@@ -1,9 +1,14 @@
 import Layout from '../components/layout';
 import Head from 'next/head';
 import Link from 'next/link';
+import MarkdownIt from 'markdown-it';
+import essay from '../essay.json';
 import styles from '../styles/ensayo.module.css';
 
 export default function Ensayo() {
+
+  const md = new MarkdownIt({ breaks: true });
+
   return (
     <Layout>
       <Head>
@@ -16,8 +21,8 @@ export default function Ensayo() {
             <img src="/images/galaxy-small-izq.png" />
           </picture>
           <h3 className={styles.titleEnsayo}>
-            Este es el título del artículo: <br />
-            Título del artículo
+            Así se hace <span>periodismo feminista</span><br />
+            en América Latina
           </h3>
           <picture>
             <source media="(min-width: 900px)" srcSet="/images/galaxy-der.png" />
@@ -25,40 +30,10 @@ export default function Ensayo() {
           </picture>
         </div>
         <div className={styles.ensayoContainer}>
-          <div className={styles.ensayoText}>
-            <p>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-            sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-            aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud
-            exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
-            commodo consequat. Duis autem vel eum iriure dolor in hendrerit
-            in vulputate velit esse molestie consequat, vel illum dolore eu
-            feugiat nulla facilisis at vero eros et accumsan et iusto odio
-            dignissim qui blandit praesent luptatum zzril delenit augue duis
-            dolore te feugait nulla facilisi.
-            </p>
-            <p>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-            sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-            aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud
-            exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
-            commodo consequat. Duis autem vel eum iriure dolor in hendrerit
-            in vulputate velit esse molestie consequat, vel illum dolore eu
-            feugiat nulla facilisis at vero eros et accumsan et iusto odio
-            dignissim qui blandit praesent luptatum zzril delenit augue duis
-            dolore te feugait nulla facilisi.
-            </p>
-            <p>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-            sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-            aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud
-            exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
-            commodo consequat. Duis autem vel eum iriure dolor in hendrerit
-            in vulputate velit esse molestie consequat, vel illum dolore eu
-            feugiat nulla facilisis at vero eros et accumsan et iusto odio
-            dignissim qui blandit praesent luptatum zzril delenit augue duis
-            dolore te feugait nulla facilisi.
-            </p>
+          <div className={styles.ensayoText}
+          dangerouslySetInnerHTML={{
+            __html: md.render(essay.body),
+          }}>
           </div>
           <Link href="/">
             <a className={styles.link}>Volver al inicio</a>

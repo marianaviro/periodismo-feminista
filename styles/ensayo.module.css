@@ -17,11 +17,19 @@
 
 .ensayo .titleEnsayo {
   flex: 2;
-  font-size: 40px;
+  font-size: 3.5rem;
   font-style: italic;
   text-transform: uppercase;
   line-height: 1.2;
   font-weight: 400;
+}
+
+.ensayo .titleEnsayo span {
+  color: #ff4adc;
+}
+
+.ensayo .titleEnsayo br {
+  margin-bottom: 0;
 }
 
 .ensayo .titleContainer picture {
@@ -45,6 +53,23 @@
 
 .ensayo p {
   margin-bottom: 30px;
+}
+
+.ensayo br {
+  margin-bottom: 30px;
+}
+
+.ensayo a {
+  color: #ff4adc;
+}
+
+.ensayo a:hover {
+  font-weight: bold;
+}
+
+.ensayo strong {
+  font-weight: bold;
+  font-size: 1.3rem;
 }
 
 .ensayo .link {

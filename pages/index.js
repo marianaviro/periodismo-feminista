@@ -42,9 +42,10 @@ export default function Home() {
           <img src="/images/galaxy-small-izq.png" />
         </picture>
         <div className={styles.articleTitle}>
-          <h3>
-            Este es el título del artículo: Título del artículo
-          </h3>
+        <h3>
+          Así se hace <span>periodismo feminista</span><br />
+          en América Latina
+        </h3>
           <Link href="/ensayo">
             <a className={styles.articleLink}>Leer ensayo</a>
           </Link>
