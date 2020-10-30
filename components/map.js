@@ -23,8 +23,8 @@ function Map({ onCountrySelected, selectedCountry }) {
           rotate: [75, 20, 0],
           scale: 250
         }}
-        width='450'
-        height='450'
+        width={450}
+        height={450}
       >
         <Geographies geography={geoUrl}>
           {({ geographies }) =>
