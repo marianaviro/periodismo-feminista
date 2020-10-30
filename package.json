@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/marianaviro/periodismo-feminista#readme",
   "dependencies": {
+    "chart.js": "^2.9.4",
     "markdown-it": "^12.0.2",
     "next": "^9.5.5",
     "react": "^17.0.1",

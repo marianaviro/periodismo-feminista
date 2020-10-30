@@ -1,10 +1,11 @@
 import Head from 'next/head';
 import Layout from '../components/layout';
-import Iframe from '../components/iframe';
 import Map from '../components/map';
 import CountryCard from '../components/countryCard';
 import Link from 'next/link';
+import Chart from 'chart.js';
 import styles from '../styles/home.module.css';
+import BarChart from '../components/barChart.js';
 import { useState } from 'react';
 
 export default function Home() {
@@ -75,7 +76,7 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.vizBannerIframe}>
-            <Iframe src="/viz/v.html" height="100%" />
+            <BarChart></BarChart>
           </div>
         </div>
         <div className={styles.vizBanner}>
@@ -97,7 +98,7 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.vizBannerIframe}>
-            <Iframe src="/viz/v.html" height="100%" />
+            <BarChart></BarChart>
           </div>
         </div>
       </div>
