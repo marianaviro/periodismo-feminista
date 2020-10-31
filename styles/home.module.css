@@ -118,6 +118,26 @@
   padding: 50px 0px 0px 0px;
 }
 
+.vizBannerContainer .storytelling {
+  padding: 60px 50px 20px 50px;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.vizBannerContainer .arrows {
+  text-align: center;
+}
+
+.vizBannerContainer .arrows img {
+  margin-left: 3%;
+  width: 150px;
+}
+
+.vizBannerContainer .arrows img:first-of-type {
+  margin-right: 3%;
+  margin-left: 0px;
+}
+
 .vizBannerIframe, .vizBannerText {
   width: 100%;
   min-width: 300px;
@@ -157,6 +177,14 @@
   font-style: normal;
   font-weight: 300;
   color: #1e1e1e;
+}
+
+.storyText a {
+  color: #ff4adc;
+}
+
+.storyText a:hover {
+  font-weight: bold;
 }
 
 .story {
@@ -415,12 +443,12 @@
   }
 
   .mapaTitleContainer .directions {
-    text-align: right;
+    text-align: center;
     margin-bottom: 50px;
   }
 
   .mapaTitle {
-    justify-content: flex-end;
+    justify-content: center;
     padding-bottom: 15px;
   }
 

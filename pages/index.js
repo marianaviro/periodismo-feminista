@@ -22,12 +22,14 @@ export default function Home() {
       <div className={styles.homeIntro}>
         <div className={styles.homeIntroText}>
           <p>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-            sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-            magna aliquam erat volutpat. Lorem ipsum dolor sit amet,
-            consectetuer adipiscing elit, sed diam nonummy nibh euismod
-            tincidunt ut laoreet dolore magna aliquam erat volutpat.
-            Ut wisi enim ad minim veniam, quis nostrud exerci.
+            Esta investigación analiza catorce medios feministas de diferentes
+            países de América Latina y sus respectivas publicaciones entre el
+            20 de noviembre de 2019 y el 15 de marzo de 2020. El propósito es
+            identificar sus similitudes y diferencias narrativas, sus audiencias
+            y sus formas de financiamiento. El resultado son catorce perfiles de
+            medios en los que, de manera sucinta, cada uno es presentado. El
+            objetivo es que quien consulte este proyecto se haga una idea general
+            de los medios y de este tipo de periodismo.
           </p>
         </div>
         <div className={styles.homeIntroImage}>
@@ -57,21 +59,27 @@ export default function Home() {
         </picture>
       </div>
       <div className={styles.vizBannerContainer}>
+        <div className={styles.storytelling}>
+          <img src="/images/storytelling.svg" alt="Los medios en conjunto" />
+        </div>
+        <div className={styles.arrows}>
+          <img src="/images/flecha_izq.svg" alt="Ilustración de flecha" />
+          <img src="/images/flecha_der.svg" alt="Ilustración de flecha" />
+        </div>
         <div className={styles.vizBanner}>
           <div className={styles.vizBannerText}>
             <img className={styles.rayo} src="/images/rayo.svg"/>
             <div className={styles.story}>
-              <h3 className={styles.storyTitle}>LOREM IPSUM DOLOR SIT AMET,</h3>
+              <h3 className={styles.storyTitle}>Ecosistema de medios jóvenes</h3>
               <p className={styles.storyText}>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-                nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-                erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
-                tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-                consequat. Duis autem vel eum iriure dolor in hendrerit in
-                vulputate velit esse molestie consequat, vel illum dolore eu
-                feugiat nulla facilisis at vero eros et accumsan et iusto odio
-                dignissim qui blandit praesent luptatum zzril delenit augue duis
-                dolore te feugait nulla facilisi.
+                En este ecosistema de medios solo hay uno que supera la mayoría
+                de edad, pero esto no significa una explosión de medios
+                feministas en años recientes. Es, más bien, la muestra de que
+                mantenerse en funcionamiento por más de dos décadas es un logro
+                al alcance de pocos. En la web, como fósiles, aún se pueden
+                consultar medios feministas cuya vida no superó un lustro.
+                Sin <a href="/perfil/cimac-noticias">Cimac Noticias</a>, el
+                promedio de vida de los restantes trece medios es de cuatro años.
               </p>
             </div>
           </div>
@@ -83,23 +91,90 @@ export default function Home() {
           <div className={styles.vizBannerText}>
             <img className={styles.rayo} src="/images/rayo.svg"/>
             <div className={styles.story}>
-              <h3 className={styles.storyTitle}>LOREM IPSUM DOLOR SIT AMET,</h3>
+              <h3 className={styles.storyTitle}>Pequeños, medianos, grandes y fuera de categoría</h3>
               <p className={styles.storyText}>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-                nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-                erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
-                tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-                consequat. Duis autem vel eum iriure dolor in hendrerit in
-                vulputate velit esse molestie consequat, vel illum dolore eu
-                feugiat nulla facilisis at vero eros et accumsan et iusto odio
-                dignissim qui blandit praesent luptatum zzril delenit augue duis
-                dolore te feugait nulla facilisi.
+                Una de las mayores diferencias de estos catorce medios es la periodicidad
+                de sus publicaciones. Aquí, si bien <a href="/perfil/cimac-noticias">Cimac Noticias</a> y <a href="/perfil/voces-feministas">Voces Feministas</a> forman
+                parte de los medios fuera de categoría porque publican más de dos
+                notas al día, es necesario mencionar que este último es en esencia un medio
+                republicador, es decir, produce muy poco del contenido que aparece en su página
+                web. Los grandes son <a href="/perfil/latfem">Latfem</a> y <a href="/perfil/malvestida">Malvestida</a> que
+                en promedio sacan una nota al día
+                y con tipos de contenido muy distintos. El primero apuesta por artículos largos;
+                el segundo, por textos cortos.
               </p>
             </div>
           </div>
           <div className={styles.vizBannerIframe}>
             <BarChart></BarChart>
           </div>
+        </div>
+        <div className={styles.vizBanner}>
+          <div className={styles.vizBannerText}>
+            <img className={styles.rayo} src="/images/rayo.svg"/>
+            <div className={styles.story}>
+              <h3 className={styles.storyTitle}>Más publicaciones no implica más seguidores</h3>
+              <p className={styles.storyText}>
+                El desempeño en redes se comporta de manera homogénea en la mayoría de los medios.
+                Ninguno supera los 500.000 seguidores en alguna de las redes sociales, lo que hace
+                pensar que su alcance aún es marginal respecto del alcance que pueden tener los
+                medios tradicionales de sus respectivos países. Aquí destacan los tres picos, de
+                tres medios, en tres redes sociales
+                distintas. <a href="/perfil/voces-feministas">Voces Feministas</a> y <a href="/perfil/malvestida">Malvestida</a> son
+                dos de los medios que más publican, lo que podría explicar su éxito en redes.
+                Sin embargo, <a href="/perfil/economia-feminita">Economía Femini(s)ta</a> tiene un
+                promedio de publicación de tres artículos al mes, pero es el medio con más seguidores
+                en Twitter.
+              </p>
+            </div>
+          </div>
+          <div className={styles.vizBannerIframe}>
+            <BarChart></BarChart>
+          </div>
+        </div>
+        <div className={styles.vizBanner}>
+          <div className={styles.vizBannerText}>
+            <img className={styles.rayo} src="/images/rayo.svg"/>
+            <div className={styles.story}>
+              <h3 className={styles.storyTitle}>Medios, en esencia, noticiosos</h3>
+              <p className={styles.storyText}>
+                Entre el 20 de noviembre de 2019 y el 15 de marzo de 2020, estos
+                catorce medios publicaron juntos 1.236 artículos en sus páginas web.
+                Más del 40% de esas publicaciones fueron noticias sobre hechos puntuales
+                de cada país: una movilización feminista, la aprobación de una ley
+                contra la violencia, la denuncia de un feminicidio. Notas cortas con
+                información específica.
+              </p>
+            </div>
+          </div>
+          <div className={styles.vizBannerIframe}>
+            <BarChart></BarChart>
+          </div>
+        </div>
+        <div className={styles.vizBanner}>
+          <div className={styles.vizBannerText}>
+            <img className={styles.rayo} src="/images/rayo.svg"/>
+            <div className={styles.story}>
+              <h3 className={styles.storyTitle}>Sitios para informarse sobre las movilizaciones</h3>
+              <p className={styles.storyText}>
+                Por fuera de las categorías periodísticas, más del 50% de los artículos
+                tienen un carácter explicativo en sentido amplio, es decir, cuentan o
+                evidencian alguna problemática que va desde por qué los piropos en la
+                calle son acoso hasta cómo hacerle el test de Bechdel a una película.
+                Ahora, lo más relevante es que por su naturaleza estos medios cubren los
+                movimientos feministas de sus países e informan constantemente sobre las
+                manifestaciones y marchas que se hacen en el continente, de ahí que más del
+                20% de sus artículo sean precisamente sobre este tema.
+              </p>
+            </div>
+          </div>
+          <div className={styles.vizBannerIframe}>
+            <BarChart></BarChart>
+          </div>
+        </div>
+        <div className={styles.arrows}>
+          <img src="/images/flecha_izq.svg" alt="Ilustración de flecha" />
+          <img src="/images/flecha_der.svg" alt="Ilustración de flecha" />
         </div>
       </div>
       <div id="mapa-de-medios">
