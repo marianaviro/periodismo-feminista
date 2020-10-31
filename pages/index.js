@@ -78,7 +78,7 @@ export default function Home() {
                 mantenerse en funcionamiento por más de dos décadas es un logro
                 al alcance de pocos. En la web, como fósiles, aún se pueden
                 consultar medios feministas cuya vida no superó un lustro.
-                Sin <a href="/perfil/cimac-noticias">Cimac Noticias</a>, el
+                Sin <Link href="/perfil/cimac-noticias"><a className={styles.navbarLink}>Cimac Noticias</a></Link>, el
                 promedio de vida de los restantes trece medios es de cuatro años.
               </p>
             </div>
@@ -94,11 +94,11 @@ export default function Home() {
               <h3 className={styles.storyTitle}>Pequeños, medianos, grandes y fuera de categoría</h3>
               <p className={styles.storyText}>
                 Una de las mayores diferencias de estos catorce medios es la periodicidad
-                de sus publicaciones. Aquí, si bien <a href="/perfil/cimac-noticias">Cimac Noticias</a> y <a href="/perfil/voces-feministas">Voces Feministas</a> forman
+                de sus publicaciones. Aquí, si bien <Link href="/perfil/cimac-noticias"><a className={styles.navbarLink}>Cimac Noticias</a></Link> y <Link href="/perfil/voces-feministas"><a className={styles.navbarLink}>Voces Feministas</a></Link> forman
                 parte de los medios fuera de categoría porque publican más de dos
                 notas al día, es necesario mencionar que este último es en esencia un medio
                 republicador, es decir, produce muy poco del contenido que aparece en su página
-                web. Los grandes son <a href="/perfil/latfem">Latfem</a> y <a href="/perfil/malvestida">Malvestida</a> que
+                web. Los grandes son <Link href="/perfil/latfem"><a className={styles.navbarLink}>Latfem</a></Link> y <Link href="/perfil/malvestida"><a className={styles.navbarLink}>Malvestida</a></Link> que
                 en promedio sacan una nota al día
                 y con tipos de contenido muy distintos. El primero apuesta por artículos largos;
                 el segundo, por textos cortos.
@@ -120,9 +120,9 @@ export default function Home() {
                 pensar que su alcance aún es marginal respecto del alcance que pueden tener los
                 medios tradicionales de sus respectivos países. Aquí destacan los tres picos, de
                 tres medios, en tres redes sociales
-                distintas. <a href="/perfil/voces-feministas">Voces Feministas</a> y <a href="/perfil/malvestida">Malvestida</a> son
+                distintas. <Link href="/perfil/voces-feministas"><a className={styles.navbarLink}>Voces Feministas</a></Link> y <Link href="/perfil/malvestida"><a className={styles.navbarLink}>Malvestida</a></Link> son
                 dos de los medios que más publican, lo que podría explicar su éxito en redes.
-                Sin embargo, <a href="/perfil/economia-feminita">Economía Femini(s)ta</a> tiene un
+                Sin embargo, <Link href="/perfil/economia-feminita"><a className={styles.navbarLink}>Economía Femini(s)ta</a></Link> tiene un
                 promedio de publicación de tres artículos al mes, pero es el medio con más seguidores
                 en Twitter.
               </p>
