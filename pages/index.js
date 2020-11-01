@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Layout from '../components/layout';
 import Map from '../components/map';
 import CountryCard from '../components/countryCard';
+import Iframe from '../components/iframe';
 import Link from 'next/link';
 import Chart from 'chart.js';
 import styles from '../styles/home.module.css';
@@ -148,7 +149,7 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.vizBannerIframe}>
-            <BarChart></BarChart>
+            <Iframe src="/viz/bubbles.html"></Iframe>
           </div>
         </div>
         <div className={styles.vizBanner}>
@@ -169,7 +170,7 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.vizBannerIframe}>
-            <BarChart></BarChart>
+            <Iframe src="/viz/bubbles2.html"></Iframe>
           </div>
         </div>
         <div className={styles.arrows}>
