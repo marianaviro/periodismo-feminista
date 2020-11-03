@@ -3,21 +3,26 @@ import Layout from '../../components/layout';
 import MarkdownIt from 'markdown-it';
 import Link from 'next/link';
 import db from '../../db.json';
-import { useEffect, useState } from 'react';
-import { useRouter } from 'next/router';
 import styles from '../../styles/perfiles.module.css';
 
-export default function Profile() {
-  const router = useRouter();
-  const { slug } = router.query;
+export async function getStaticPaths() {
+  return {
+    paths: db.map((record) => `/perfil/${record.slug}`),
+    fallback: false,
+  };
+}
 
+export async function getStaticProps({ params }) {
+  const profile = db.find((record) => record.slug === params.slug);
+  return {
+    props: {
+      profile,
+    },
+  };
+}
+
+export default function Profile({ profile }) {
   const md = new MarkdownIt({ breaks: true });
-  const [profile, setProfile] = useState();
-
-  useEffect(() => {
-    const match = db.find((record) => record.slug === slug);
-    setProfile(match);
-  }, [slug]);
 
   return profile ? (
     <Layout>
@@ -40,7 +45,8 @@ export default function Profile() {
         </div>
         <div className={styles.perfilContainer}>
           <h3 className={styles.perfilTitle}>{profile.profile_title}</h3>
-          <div className={styles.perfilText}
+          <div
+            className={styles.perfilText}
             dangerouslySetInnerHTML={{
               __html: md.render(profile.profile_body),
             }}
