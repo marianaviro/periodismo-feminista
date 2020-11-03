@@ -25,7 +25,7 @@ export default function CountryCard({ selectedCountry }) {
       <h2 className={styles.countryTitle}>{returnNombre(selectedCountry.ISO_A3)}</h2>
       {!media.length ? (
         <div className={styles.mediaNotFound}>
-          <p>Aún no hemos identificado medios feministas en este país. ¿Conoces alguno?</p>
+          <p>Aún seguimos buscando medios feministas en este país. ¿Conoces alguno?</p>
           <a className={styles.mediaLink} href="mailto:js.romero11@uniandes.edu.co">Escríbenos</a>
         </div>
       ) : (
