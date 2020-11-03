@@ -46,9 +46,13 @@ export default function Footer() {
         <div className={styles.footerItem}>
           <p className={styles.thanks}>
             Este proyecto fue realizado por Johan Sebastián Romero Rodríguez
-            como parte de su proyecto de grado de la maestría en Periodismo de
-            la Universidad de los Andes. Diseño y desarrollo web por Mariana
-            Villamizar Rodríguez.
+            en el contexto de la Maestría en Periodismo de la Universidad de
+            los Andes. El diseño y desarrollo web es por Mariana Villamizar y
+            la supervisión general por Sandra Sánchez López, Prof. Asociada
+            del Centro de Estudios en Periodismo. El proyecto fue financiado,
+            en su fase de producción, por el Centro de Investigación y
+            Creación, CIC, de la Facultad de Artes y Humanidades de la
+            Universidad de los Andes.
           </p>
         </div>
       </div>

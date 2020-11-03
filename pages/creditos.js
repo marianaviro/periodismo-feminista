@@ -6,7 +6,7 @@ export default function Credits() {
   return (
     <Layout>
       <Head>
-        <title>Cŕeditos</title>
+        <title>Créditos</title>
       </Head>
       <div className={styles.acknowledge}>
         <div className={styles.credits}>
@@ -28,7 +28,7 @@ export default function Credits() {
           />
           <div className={styles.columns}>
             <div className={styles.column}>
-              <h3>Sandra Beatriz Gutiérrez Bermúdez</h3>
+              <h3>Sandra Sánchez López</h3>
               <p>Asesora de proyecto de grado</p>
             </div>
             <div className={styles.column}>
@@ -50,26 +50,7 @@ export default function Credits() {
         </div>
         <div className={styles.text}>
           <p>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-            volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-            ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-            consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate
-            velit esse molestie consequat, vel illum dolore eu feugiat nulla
-            facilisis at vero eros et accumsan et iusto odio dignissim qui
-            blandit praesent luptatum zzril delenit augue duis dolore te feugait
-            nulla facilisi.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-            volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-            ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-            consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate
-            velit esse molestie consequat, vel illum dolore eu feugiat nulla
-            facilisis at vero eros et accumsan et iusto odio dignissim qui
-            blandit praesent luptatum zzril delenit augue duis dolore te feugait
-            nulla facilisi.
+            En esta investigación se analizan catorce medios feministas de América Latina y sus respectivas publicaciones entre el 20 de noviembre de 2019 y el 15 de marzo de 2020 con el propósito de identificar sus similitudes y diferencias narrativas, sus audiencias y sus formas de financiamiento. En resumen, son catorce medios, ocho países y más de 1.200 artículos revisados. Los resultados son, por un lado, una cartografía, por supuesto aún incompleta, de los medios de la región; estos, presentados a partir de perfiles que rescatan su línea editorial. Por el otro, un ensayo elaborado a partir de los perfiles en los que, ya en conjunto, dialogan los unos con los otros, con medios que no son de la región y con el pasado. El objetivo final de este proyecto es que sea un espacio de consulta para quienes investigan en periodismo o para quienes quieren encontrar un medio feminista en su país o en otros países.
           </p>
         </div>
       </div>
