@@ -4,9 +4,7 @@
   font-family: 'acumin-pro', sans-serif;
   font-style: normal;
   font-weight: 300;
-  /* display: grid; */
   padding: 0 20px;
-  /* grid-gap: 16px; */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -16,8 +14,6 @@
 
 .homeIntroText, .homeIntroImage {
   max-width: 500px;
-  /* min-width: 400px; */
-  /* width: 80%; */
 }
 
 .homeIntroText p {
@@ -50,15 +46,6 @@
   font-style: italic;
   font-weight: 400;
 }
-
-/* .articleBanner h3 {
-  flex: 2;
-  font-size: 40px;
-  font-style: italic;
-  text-transform: uppercase;
-  margin-bottom: 30px;
-  max-width: 250px;
-} */
 
 .articleTitle h3 {
   flex: 2;
@@ -100,14 +87,11 @@
 }
 
 .articleBanner picture {
-  /* display: none; */
   flex: 1;
 }
 
 .vizBanner {
-  /* display: grid; */
   padding: 25px 0px;
-  /* grid-gap: 16px; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -133,6 +117,10 @@
   width: 150px;
 }
 
+.vizBannerContainer .arrows:last-of-type {
+  padding-top: 150px;
+}
+
 .vizBannerContainer .arrows img:first-of-type {
   margin-right: 3%;
   margin-left: 0px;
@@ -144,21 +132,14 @@
 }
 
 .vizBannerIframe {
-  /* padding: 0px 40px 0px 0px; */
   padding: 30px 0px;
-  /* min-width: 300px;
-  max-width: 500px; */
-  height: 400px;
-  /* background-color: #1e1e1e; */
+  height: 500px;
 }
 
 .vizBannerText {
   align-items: flex-start;
   display: flex;
-  /* padding: 0px 0px 0px 40px; */
   padding: 30px 50px;
-  /* min-width: 300px;
-  max-width: 500px; */
 }
 
 .storyTitle {

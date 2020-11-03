@@ -6,7 +6,7 @@ export default function Iframe({ src, title, width, height }) {
       className="viz"
       title={title}
       width={width || '100%'}
-      height={height || 300}
+      height={height || 500}
     ></iframe>
   );
 }

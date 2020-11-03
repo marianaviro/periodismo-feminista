@@ -85,7 +85,7 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.vizBannerIframe}>
-            <BarChart></BarChart>
+            <Iframe src="/viz/treemap.html"></Iframe>
           </div>
         </div>
         <div className={styles.vizBanner}>
@@ -107,7 +107,7 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.vizBannerIframe}>
-            <BarChart></BarChart>
+            <Iframe src="/viz/bars.html"></Iframe>
           </div>
         </div>
         <div className={styles.vizBanner}>
@@ -130,7 +130,7 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.vizBannerIframe}>
-            <BarChart></BarChart>
+            <Iframe src="/viz/groupedbars.html"></Iframe>
           </div>
         </div>
         <div className={styles.vizBanner}>
