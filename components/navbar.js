@@ -33,7 +33,7 @@ export default function Navbar() {
         </button>
       </div>
       <div className={styles.navbarLeft}>
-        <Link href="/ensayo">
+        <Link href="/articulo">
           <a className={styles.navbarLink}>Artículo</a>
         </Link>
         <Link href="/#medios-en-conjunto">

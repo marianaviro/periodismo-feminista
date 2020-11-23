@@ -43,7 +43,7 @@ export default function Home() {
           Así se hace <span>periodismo feminista</span><br />
           en América Latina
         </h3>
-          <Link href="/ensayo">
+          <Link href="/articulo">
             <a className={styles.articleLink}>Leer artículo</a>
           </Link>
         </div>
