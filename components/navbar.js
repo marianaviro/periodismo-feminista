@@ -36,6 +36,9 @@ export default function Navbar() {
         <Link href="/ensayo">
           <a className={styles.navbarLink}>Artículo</a>
         </Link>
+        <Link href="/#medios-en-conjunto">
+          <a className={styles.navbarLink}>Medios en conjunto</a>
+        </Link>
         <Link href="/#mapa-de-medios">
           <a className={styles.navbarLink}>Mapa</a>
         </Link>

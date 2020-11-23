@@ -62,6 +62,7 @@
 }
 
 .navbarSocial {
+  display: none;
   padding-left: 10px;
 }
 

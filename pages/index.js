@@ -23,14 +23,7 @@ export default function Home() {
       <div className={styles.homeIntro}>
         <div className={styles.homeIntroText}>
           <p>
-            Esta investigación analiza catorce medios feministas de diferentes
-            países de América Latina y sus respectivas publicaciones entre el
-            20 de noviembre de 2019 y el 15 de marzo de 2020. El propósito es
-            identificar sus similitudes y diferencias narrativas, sus audiencias
-            y sus formas de financiamiento. El resultado son catorce perfiles de
-            medios en los que, de manera sucinta, cada uno es presentado. El
-            objetivo es que quien consulte este proyecto se haga una idea general
-            de los medios y de este tipo de periodismo.
+            Este es un rastreo y análisis de catorce medios feministas de diferentes países de América Latina y sus respectivas publicaciones entre el 20 de noviembre de 2019, primera vez que el colectivo Las Tesis hizo público su performance “Un violador en tu camino”, y el 15 de marzo de 2020, una semana posterior a las marchas del 8 de marzo Día Internacional de la Mujer. Aquí se identifican sus similitudes y diferencias narrativas, sus audiencias y sus formas de financiamiento. Una interpretación crítica del periodismo feminista de en América Latina, sus trazos generales en conjunto y catorce perfiles específicos de los medios en el mapa de la región son el resultado de este proyecto. Quien lo consulte encontrará aquí un espacio para empaparse de este tipo de periodismo o encontrará un lugar para enriquecer su conocimiento.
           </p>
         </div>
         <div className={styles.homeIntroImage}>
@@ -51,7 +44,7 @@ export default function Home() {
           en América Latina
         </h3>
           <Link href="/ensayo">
-            <a className={styles.articleLink}>Leer ensayo</a>
+            <a className={styles.articleLink}>Leer artículo</a>
           </Link>
         </div>
         <picture>
@@ -59,9 +52,12 @@ export default function Home() {
           <img src="/images/galaxy-small-der.png" />
         </picture>
       </div>
-      <div className={styles.vizBannerContainer}>
+      <div id="medios-en-conjunto" className={styles.vizBannerContainer}>
         <div className={styles.storytelling}>
           <img src="/images/storytelling.svg" alt="Los medios en conjunto" />
+        </div>
+        <div className={styles.storysubtitle}>
+          <h3>Así se ven los medios feministas de América Latina cuando se agrupan</h3>
         </div>
         <div className={styles.arrows}>
           <img src="/images/flecha_izq.svg" alt="Ilustración de flecha" />
@@ -173,16 +169,19 @@ export default function Home() {
             <Iframe src="/viz/bubbles2.html"></Iframe>
           </div>
         </div>
-        <div className={styles.arrows}>
-          <img src="/images/flecha_izq.svg" alt="Ilustración de flecha" />
-          <img src="/images/flecha_der.svg" alt="Ilustración de flecha" />
-        </div>
       </div>
-      <div id="mapa-de-medios">
+      <div className={styles.mapaExternalContainer}>
         <div className={styles.mapaTitleContainer}>
-          <div className={styles.mapaTitle}>
+          <div id="mapa-de-medios" className={styles.mapaTitle}>
             <img className={styles.mapaTitleBg} src="/images/mapa-medios-bg.png"/>
             <img className={styles.mapaTitleSvg} src="/images/mapa-medios.svg"/>
+          </div>
+          <div className={styles.mapaSubtitle}>
+            <p>Más de 1.200 artículos en ocho países son la base de esta cartografía</p>
+          </div>
+          <div className={styles.arrows}>
+            <img src="/images/flecha_izq.svg" alt="Ilustración de flecha" />
+            <img src="/images/flecha_der.svg" alt="Ilustración de flecha" />
           </div>
           <div className={styles.directions}>
             <p>Selecciona algún país para consultar los medios que hemos identificado.</p>
