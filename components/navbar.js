@@ -45,6 +45,9 @@ export default function Navbar() {
         <Link href="/creditos">
           <a className={styles.navbarLink}>Créditos</a>
         </Link>
+        <Link href="/data/datos-periodismo-feminista.xlsx">
+          <a className={styles.navbarLink}>Descargar datos</a>
+        </Link>
         <div className={styles.navbarSocial}>
           <a href="https://www.twitter.com" alt="Compartir en Twitter" target="_blank">
             <img src="/images/twitter.svg" alt="Twitter logo" />

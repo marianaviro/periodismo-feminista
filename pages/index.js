@@ -81,7 +81,7 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.vizBannerIframe}>
-            <Iframe src="/viz/treemap.html"></Iframe>
+            <Iframe src="/viz/bars2.html"></Iframe>
           </div>
         </div>
         <div className={styles.vizBanner}>

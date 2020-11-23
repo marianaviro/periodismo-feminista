@@ -9,20 +9,42 @@ export default function Footer() {
     <footer className={styles.footerContainer}>
       <div className={styles.credits}>
         {router.pathname === '/creditos' ? (
-          <div>
+          <div className={styles.fireLinks}>
             <img className={styles.fuego} src="/images/fuego.svg" alt="Ilustración de llamas de fuego" />
+            <Link href="/data/datos-periodismo-feminista.xlsx">
+              <a className={styles.data}>
+                <img
+                  src="/images/descarga-datos.svg"
+                  className={styles.hovered}
+                  alt="Descargar datos"
+                />
+              </a>
+            </Link>
           </div>
         ) : (
-          <Link href="/creditos">
-            <a>
-              <img
-                src="/images/creditos.svg"
-                className={styles.hovered}
-                alt="Ver créditos"
-              />
-            </a>
-          </Link>
+          <div className={styles.links}>
+            <Link href="/data/datos-periodismo-feminista.xlsx">
+              <a className={styles.data}>
+                <img
+                  src="/images/descarga-datos.svg"
+                  className={styles.hovered}
+                  alt="Descargar datos"
+                />
+              </a>
+            </Link>
+            <Link href="/creditos">
+              <a className={styles.creditsButton}>
+                <img
+                  src="/images/creditos.svg"
+                  className={styles.hovered}
+                  alt="Ver créditos"
+                />
+              </a>
+            </Link>
+          </div>
         )}
+      </div>
+      <div className={styles.data}>
       </div>
       <div className={styles.footer}>
         <div className={styles.footerItem}>
