@@ -22,8 +22,11 @@ export default function Home() {
       </Head>
       <div className={styles.homeIntro}>
         <div className={styles.homeIntroText}>
+          <p className={styles.homeIntroFeatured}>
+            Este es un rastreo y análisis de <span>catorce</span> medios feministas
+          </p>
           <p>
-            Este es un rastreo y análisis de catorce medios feministas de diferentes países de América Latina y sus respectivas publicaciones entre el 20 de noviembre de 2019, primera vez que el colectivo Las Tesis hizo público su performance “Un violador en tu camino”, y el 15 de marzo de 2020, una semana posterior a las marchas del 8 de marzo Día Internacional de la Mujer. Aquí se identifican sus similitudes y diferencias narrativas, sus audiencias y sus formas de financiamiento. Una interpretación crítica del periodismo feminista de en América Latina, sus trazos generales en conjunto y catorce perfiles específicos de los medios en el mapa de la región son el resultado de este proyecto. Quien lo consulte encontrará aquí un espacio para empaparse de este tipo de periodismo o encontrará un lugar para enriquecer su conocimiento.
+            de diferentes países de América Latina y sus respectivas publicaciones entre el 20 de noviembre de 2019, primera vez que el colectivo Las Tesis hizo público su performance “Un violador en tu camino”, y el 15 de marzo de 2020, una semana posterior a las marchas del 8 de marzo Día Internacional de la Mujer. Aquí se identifican sus similitudes y diferencias narrativas, sus audiencias y sus formas de financiamiento. Una interpretación crítica del periodismo feminista de en América Latina, sus trazos generales en conjunto y catorce perfiles específicos de los medios en el mapa de la región son el resultado de este proyecto. Quien lo consulte encontrará aquí un espacio para empaparse de este tipo de periodismo o encontrará un lugar para enriquecer su conocimiento.
           </p>
         </div>
         <div className={styles.homeIntroImage}>
